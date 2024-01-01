@@ -29,11 +29,11 @@ class Program {
             AccountSummaries accountSummaries = accountSummariesRequest.Execute();
             var total = accountSummaries.Items.SelectMany(e => e.WebProperties.SelectMany(p => p.Profiles)).Count();
 
-            var counter = 1;
+            var counter = 0;
             foreach (var account in accountSummaries.Items) {
                 foreach (var property in account.WebProperties.OrderByDescending(p => p.Name)) {
                     foreach (var view in property.Profiles) {
-                        Console.WriteLine($"Retrieving data for view {counter}/{total}: {property.Name}-{view.Name}-{property.WebsiteUrl}...");
+                        Console.WriteLine($"Retrieving data for view {++counter}/{total}: {property.Name}-{view.Name}-{property.WebsiteUrl}...");
 
                         // Create Reporting Service
                         var reportingService = new AnalyticsReportingService(new BaseClientService.Initializer() {
