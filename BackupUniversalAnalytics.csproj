@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>c6f9a3ef-f8b9-42b8-b117-63ccce15198d</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+    <PackageReference Include="Google.Apis.Analytics.v3" Version="1.64.0.1679" />
+    <PackageReference Include="Google.Apis.AnalyticsReporting.v4" Version="1.64.0.2484" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.64.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.1" />
+  </ItemGroup>
+
+</Project>

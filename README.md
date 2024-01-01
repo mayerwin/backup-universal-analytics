@@ -30,7 +30,7 @@ You'll have a local copy of your valuable historical Google Analytics data, that
 3. **Sit back and watch the magic happen.** The script will fetch the data for each view, and save it to a CSV file in the same folder as the executable.
 
 ## Customizing Dimensions and Metrics
-To tailor the data export to your specific needs, you can customize the dimensions and metrics that the script retrieves from your Google Analytics account. This allows you to focus on the data most relevant to your analysis.
+The script was designed to retrieve the data that 95% of users are likely interested to preserve, but if needed, you can easily customize the dimensions and metrics.
 
 ### Steps to Customize Dimensions and Metrics:
 1. **Explore Available Options**:
