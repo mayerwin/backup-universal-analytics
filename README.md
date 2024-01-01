@@ -76,8 +76,8 @@ Found a bug? Got an idea for an improvement? Feel like adding a cherry on top? Y
 ## Background
 With the transition from Universal Analytics to Google Analytics 4 (GA4), Google horribly decided not to migrate existing user data to GA4, nor to keep a way to consult it online in a legacy way, nor to at least offer a simple way to download the raw data so it could be loaded into another program.
 
-I tried all the solutions I could find to archive this data, such as the Google Analytics and SyncWith add-ons for Google Sheets, Airbyte through their cloud service, Restack.io (to export the data to BigQuery), with Docker locally, Supermetrics and Dataddo.
-Unfortunately, each time it was either too unreliable, cumbersome, slow, or didn't work at all. The Google Analytics add-on for Google Sheets for example is currently impossible to install as [Google recently started blocking it](https://groups.google.com/g/google-analytics-spreadsheet-add-on/c/dT7496g9Fe0) for security reasons... 
+I tried all the alternative solutions I could find to archive this data, such as the Google Analytics and SyncWith add-ons for Google Sheets, Airbyte through their cloud service, Restack.io (to export the data to BigQuery), with Docker locally, Supermetrics and Dataddo.
+Unfortunately, each time it was either too unreliable, cumbersome, slow, or it didn't work at all. The Google Analytics add-on for Google Sheets for example is currently impossible to install as [Google recently started blocking it](https://groups.google.com/g/google-analytics-spreadsheet-add-on/c/dT7496g9Fe0) for security reasons... 
 
 So I ended up writing this script with ChatGPT's help, which does the job neatly and quickly, without running into any API limitation issues.
 

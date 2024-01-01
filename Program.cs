@@ -107,7 +107,7 @@ class Program {
 
                 using (var writer = new StreamWriter(fileName, append: true))
                 using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture)) {
-                    if (!fileExists || startIndex == 0) {
+                    if (startIndex == 0) {
                         // Write headers
                         foreach (var header in response.Reports.First().ColumnHeader.Dimensions) {
                             csv.WriteField(header);
